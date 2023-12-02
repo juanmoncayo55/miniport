@@ -55,3 +55,22 @@ img{max-width: 100%;}
 	width: 85%;
 	margin: 0 auto;
 }
+
+/* Header */
+.header{
+	background-color: var(--color1);
+	position: fixed;
+    width: 100%;
+}
+.navigation{
+	display: flex;
+	justify-content: center;
+	column-gap: 5rem;
+	padding: 2rem 0;
+	box-shadow: 0px 0px 6px #21212185;
+}
+.navigation-link{
+	color: var(--blanco);
+	font-family: var(--fsemibold);
+	font-size: 1.7rem;
+}
