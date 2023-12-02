@@ -1,0 +1,57 @@
+:root{
+	--blanco:  #FFFFFF;
+	--negro: #000000;
+	--color1:  #282828;
+	--color2: #E78A95;
+	--color3: #3F9FC5;
+	--color4:  #2E2E2E;
+	--color5: #414141;
+	--color6: #6B6768;
+	--color7: #363634;
+
+	/* Fuentes */
+	--fbold: 'OpenSans-Bold';
+	--fextrab: 'OpenSans-ExtraBold';
+	--flight: 'OpenSans-Light';
+	--fmedium: 'OpenSans-Medium';
+	--fregular: 'OpenSans-Regular';
+	--fsemibold: 'OpenSans-SemiBold';
+}
+
+/* Estilos Globales */
+*, *:after, *:before {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos Generales */
+html{
+	box-sizing: inherit;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px;
+	font-family: var(--fregular), sans-serif;
+	color: var(--color5);
+}
+
+a{ text-decoration: none; }
+
+h1, .h1{ font-size: 4.8rem; }
+h2, .h2{ font-size: 3.9rem; }
+h3, .h3{ font-size: 3.1rem; }
+h4, .h4{ font-size: 2.5rem; }
+h5, .h5{ font-size: 2rem; }
+h6, .h6{ font-size: 1.3rem; }
+
+img{max-width: 100%;}
+
+/* Reutilizables */
+.container{
+	max-width: 120rem;
+	width: 85%;
+	margin: 0 auto;
+}
