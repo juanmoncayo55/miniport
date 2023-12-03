@@ -113,8 +113,27 @@ img{max-width: 100%;}
     box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
     display: block;
     text-align: center;
-    text-shadow: 1px 2px 1px #0000009c;
+    text-shadow: 1px 0px 1px #0000009c;
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
+}
+
+
+
+
+
+
+/* Responsive All */
+@media (min-width: 980px) {
+	.container-presentation{
+		flex-direction: row;
+	    align-items: center;
+	    column-gap: 5rem;
+	}
+	.presentation-content{ text-align: left; }
+	.presentation-description, .presentation-link{font-size: 2rem; margin-left: 0; }
+	.presentation-description{margin: 4rem 0;}
+	.presentation-name{ font-size: 3.5rem }
+	.presentation-image{ max-width: 28%; margin-bottom: 0; }
 }
