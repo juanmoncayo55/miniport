@@ -68,10 +68,10 @@ img{max-width: 100%;}
     text-align: center;
     text-shadow: 1px 0px 1px #0000009c;
     width: 100%;
-    max-width: 40rem;
+    max-width: fit-content;
     margin: 0 auto;
-	transition: .1s ease-in-out;
-	transform: translateY(0px);
+    transition: .1s ease-in-out;
+    transform: translateY(0px);
 }
 .boton:hover{
 	background-image: linear-gradient(360deg, #00000017, #ffffff36);
@@ -174,13 +174,49 @@ img{max-width: 100%;}
 	line-height: 3rem;
 	font-size: 1.5rem;
 }
+/* My projects */
+.my-projects{
+	background-color: #efefef;
+}
+.my-projects_cards{
 
+}
+.projects_card-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.projects_card-content{
+	background-color: var(--blanco);
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    box-shadow: 1px 1px 5px #b3b3b3;
+}
+.projects_card-title{
+    font-family: var(--fbold);
+    color: var(--color4);
+    /* font-size: 2.2rem; */
+    transition: all .25s ease-in-out;
+}
+.projects_card-title:hover{color: var(--color3);}
+.projects_card-subtitle{
+    font-size: 1.5rem;
+    color: var(--color6);
+    margin-top: 1rem;
+}
 
 
 
 
 
 /* Responsive All */
+@media (min-width: 650px) {
+	.projects_card{
+	    margin-bottom: 0;
+    	flex: 1 0 40%;
+	}
+}
 @media (min-width: 720px) {
 	.know{ padding: 6rem 0;	}
 	.know-subtext{ font-size: 1.6rem }
@@ -194,7 +230,7 @@ img{max-width: 100%;}
 	    justify-items: center;
 	    flex: 0 0 50%;
 	}
-	.know-card_title{ font-size: 2.2rem; }
+	.know-card_title, .projects_card-title{ font-size: 2.2rem; }
 	.know-card_icon{ font-size: 8.5rem; }
 	.know-subtext--modify{ margin: 4.5rem 0; }
 }
@@ -217,7 +253,8 @@ img{max-width: 100%;}
 	.presentation-name{ font-size: 3.5rem }
 	.presentation-image{ max-width: 28%; margin-bottom: 0; }
 	.know-card, .know-card:last-child{ flex: 1 0 30%; }
-	.know-card_description{ font-size: 1.7rem; }
-	.know-card_title{ font-size: 2.4rem; }
+	.know-card_description, .projects_card-subtitle{ font-size: 1.7rem; }
+	.know-card_title, .projects_card-title{ font-size: 2.4rem; }
 	.know-card_icon{ font-size: 9rem; }
+	.projects_card { flex: 1 0 30%; }
 }
