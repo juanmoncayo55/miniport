@@ -283,6 +283,11 @@ img{max-width: 100%;}
 	    max-width: 65rem;
     	width: 100%;
 	}
+	.formulario-input{
+		font-size: 2rem;
+    	padding: 1.5rem;
+	}
+	.actions .boton{ font-size: 2rem; }
 }
 
 @media (min-width: 980px) {
