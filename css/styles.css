@@ -205,6 +205,19 @@ img{max-width: 100%;}
     color: var(--color6);
     margin-top: 1rem;
 }
+/* foot-page */
+.foot-page{
+	background: url("../images/bg.png") var(--color4);
+	padding: 8rem 0;
+	text-align: center;
+}
+.foot-page_title{
+	color: var(--blanco);
+	font-family: var(--fbold);
+}
+.foot-page_subtitle{
+	color: var(--color6);
+}
 
 
 
