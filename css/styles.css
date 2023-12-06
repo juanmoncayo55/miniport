@@ -88,14 +88,20 @@ img{max-width: 100%;}
 .navigation{
 	display: flex;
 	justify-content: center;
-	column-gap: 5rem;
-	padding: 2rem 0;
+	column-gap: 1rem;
+    padding: 1rem 0;
 	box-shadow: 0px 0px 6px #21212185;
 }
 .navigation-link{
 	color: var(--blanco);
 	font-family: var(--fsemibold);
 	font-size: 1.7rem;
+    padding: 1rem 2rem;
+    transition: .2s all ease-in-out;
+}
+.navigation-link:hover{
+	background-color: var(--color5);
+	border-radius: 8px;
 }
 /* Presentation */
 .presentation{
@@ -265,9 +271,15 @@ img{max-width: 100%;}
     margin-bottom: 2rem;
 }
 .social-network_link {
-    background: url(../images/bg.png) #3d3d3d;
+    background-image: url(../images/bg.png);
+    background-color: #3d3d3d;
     padding: 1rem;
     border-radius: 5px;
+    flex: 0 1 50px;
+    transition: transform .15s ease-in-out;
+}
+.social-network_link:hover {
+    transform: translateY(-5px);
 }
 .social-network_link i {
     font-size: 2.3rem;
@@ -282,8 +294,15 @@ img{max-width: 100%;}
 	margin: 0 1rem;
 	padding: 0 1rem;
 }
-.footer-text a{color:#666; text-decoration: underline;}
-
+.footer-text a{color:#666; text-decoration: underline;transition: all .3s ease-in-out;}
+.footer-text a:hover{ color: var(--color3); }
+.tw:hover{ background-color: #2DAAE4; }
+.fa:hover{ background-color: #3C5A98; }
+.dr:hover{ background-color: #C4376B; }
+.li:hover{ background-color: #006599; }
+.tb:hover{ background-color: #51718A; }
+.gp:hover{ background-color: #DA2713; }
+.gh:hover{ background-color: #FAFAFA; }
 
 
 /* Responsive All */
@@ -320,7 +339,7 @@ img{max-width: 100%;}
     	width: 100%;
 	}
 	.formulario-input{
-		font-size: 2rem;
+		font-size: 1.8rem;
     	padding: 1.5rem;
 	}
 	.actions .boton{ font-size: 2rem; }
